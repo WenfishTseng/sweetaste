@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* CSS Reset End */
+body {
+  font-family: "SF Pro Text", PingFang, -apple-system, "Noto Sans", "Roboto", "微軟正黑體", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  padding: 30px 42px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header h1 a {
+  display: block;
+  width: 170px;
+  height: 40px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 31.25%;
+}
+
+.header ul li a {
+  color: #3f5d45;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 5px solid transparent;
+  padding: 5px;
+}
+
+.header ul li a:hover {
+  border-bottom: 5px solid #3f5d45;
+}
+
+.header ul li i {
+  color: #3f5d45;
+  border-bottom: 5px solid transparent;
+}
+
+.banner {
+  width: 100%;
+  height: 496px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.content .menu {
+  width: 32%;
+}
+
+.content .menu .category {
+  background: #3f5d45;
+  color: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.content .menu li a {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #3f5d45;
+  text-decoration: none;
+  border: 1px solid #eaf0ed;
+}
+
+.content .menu li a:hover {
+  background: #eaf0ed;
+}
+
+.content .main {
+  width: 66%;
+}
+
+.content .main .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .main .product-list li {
+  padding-bottom: 20px;
+}
+
+.content .main .product-list li .pdt-photo {
+  position: relative;
+}
+
+.content .main .product-list li .pdt-photo .pdt-box-title {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  background: #3f5d45;
+  color: #ffffff;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  padding: 10px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.content .main .product-list li .pdt-photo a {
+  position: absolute;
+  right: 22px;
+  top: 19px;
+  color: #3f5d45;
+  font-size: 20px;
+}
+
+.content .main .product-list li .pdt-photo a:hover {
+  font-size: 24px;
+}
+
+.content .main .product-list li .pdt-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #eaf0ed;
+  color: #3f5d45;
+  text-align: center;
+  font-size: 20px;
+}
+
+.content .main .product-list li .pdt-info .pdt-name {
+  width: 60%;
+  padding: 14px;
+  border-right: 1px solid #eaf0ed;
+  font-weight: 300;
+}
+
+.content .main .product-list li .pdt-info .pdt-price {
+  width: 40%;
+  padding: 14px;
+  font-weight: 600;
+}
+
+.content .main .product-list li .pdt-cart a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #eaf0ed;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3f5d45;
+  background: #eaf0ed;
+}
+
+.content .main .product-list li .pdt-cart a:hover {
+  background: #3f5d45;
+  color: #ffffff;
+}
+
+.content .main .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.content .main .pages li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  color: #3f5d45;
+  border: 1px solid #eaf0ed;
+  font-weight: 300;
+}
+
+.content .main .pages li a img {
+  width: 24px;
+  height: 24px;
+}
+
+.content .main .pages li a:hover {
+  background: #3f5d45;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer {
+  background: #eaf0ed;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .contact-info h2 a {
+  display: block;
+  width: 172px;
+  height: 30px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.footer .container .contact-info .info {
+  margin-top: 116px;
+}
+
+.footer .container .contact-info .info li {
+  line-height: 24px;
+  color: #3f5d45;
+}
+
+.footer .container .contact-info .info li a {
+  text-decoration: none;
+  color: #3f5d45;
+}
+
+.footer .container .contact-info .info li a:hover {
+  text-decoration: underline;
+}
+
+.footer .container .contact-info .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.footer .container .contact-info .media li a {
+  display: block;
+  margin-right: 8px;
+}
+
+.footer .container .contact-info .media li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer .container .side-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .side-info .vt-rl {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  font-size: 24px;
+}
+
+.footer .container .side-info .vt-rl p {
+  padding-left: 12px;
+}
+/*# sourceMappingURL=all.css.map */

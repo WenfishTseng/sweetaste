@@ -1,0 +1,30 @@
+// scss-docs-start color-variables
+$purple: #8a82cc !default;
+$pink: #d63384 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+$red: #ff1200 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$dark-white: #f5f5f5 !default;
+$orange: #ff982d !default;
+$dark-orange: #ff6c03 !default;
+$blue: #31baf9 !default;
+
+$dark-yellow: #dea821 !default;
+$gray: #424242 !default;
+
+$green: #3f5d45 !default;
+$light-green: #eaf0ed !default;
+$yellow: #ffe180 !default;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+
+$font-light: $white !default;
+$font-dark: $green !default;
+$bg-dark: $green !default;
+$bg-light: $light-green !default;
+$border-light: $light-green !default;
+
+// scss-docs-end theme-color-variables
